@@ -1,0 +1,64 @@
+
+
+body {
+    background-image: url("../images/folkpattern.png");
+    background-repeat: no-repeat;
+    min-height: 100%;
+    background-size: cover;
+    
+}
+
+h1 {
+    text-align: left;
+    color: rgb(8, 8, 99);
+    padding: 10px 10px 10px 10px;
+    margin-top: 60px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: auto;
+    display: inline;
+}
+
+li {
+    font-size: 16px;
+    font-weight: bold;;
+    color: rgb(8, 8, 99);
+    background-color: rgb(180, 180, 206);
+    padding: 5px 40px;
+    float: right;
+}
+
+li a {
+    color: black;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: justify;
+    color: rgb(8, 8, 99);
+    margin: 20px 10px;
+    padding: 0px 0px;
+    width: 600px;
+    font-weight: bold;
+    float: left;
+}
+
+#image {
+    float: left;
+    padding: 10px 10px;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
