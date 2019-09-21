@@ -1,3 +1,4 @@
+/* Every page */
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +9,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    min-height: 800px;
+    min-height: 1000px;
     margin: 100px 0px;
 }
 
@@ -17,30 +17,32 @@ body {
     width: 960px;
     min-height: 500px;
     padding: 20px;
+    margin-top: 160px;
 }
 
-.clearfix {
-    overflow: auto;
-}
-
-div {
-    width: 960px;
-    padding: 20px;
-    margin: 30px auto;
-    overflow: auto;
-    background-color: #ffffff;
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #777777;
+    margin: 0px 50px;
+    padding: 20px 0px;
+    font-weight: bold;
+    line-height: 20px;
 }
 
 h1 {
     font-size: 30px;
     background-color: #4aaaa5;
     color: #ffffff;
-    padding: 17px;
+    padding: 32px 20px;
     text-align: center;
     width: 200px;
-    margin: 0px 170px;
+    margin-top: 0;
+    margin-left: 172px;
     float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 .nav {
     background-color: white;
@@ -51,19 +53,31 @@ h1 {
     top: 0;
     border-bottom-style: solid;
     border-bottom-color: #666666;
-    margin: 0;
+    margin: 0px;
 }
 
-.nav ul {
+ul {
     list-style: none;
     display: inline-block;
+    margin-top: 70px;
+    float: right;
+    margin-right: 160px;
 }
 
-.nav li{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+li{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     display: inline-block;
     margin: 0px 10px;
+    padding: 5px; 
+}
+
+#border-nav {
+    border-right-style: solid; 
+    border-left-style: solid; 
+    border-color: lightgray;
+    border-width: 1px;
+    padding: 5px 20px;
 }
 
 .nav a{
@@ -75,8 +89,7 @@ h2 {
     text-align: left;
     color: #4aaaa5;
     padding: 10px 10px 10px 10px;
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 #bodyline {
@@ -90,40 +103,11 @@ h2 {
     color: gray;
 }
 
-p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px;
-    text-align: left;
-    color: #777777;
-    margin: 0px 10px;
-    padding: 0px 0px;
-    width: 600px;
-    font-weight: bold;
-    float: left;
-}
-
 #image {
     float: left;
-    border-style: solid;
-    border-color: black;
-    border-spacing: 0px 5px;
-    box-shadow: 2px 2px;
+    padding: 20px 20px;
     height: 150px;
     width: 150px;
-    position: relative;
-}
-
-.blue {
-    display: block;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #4aaaa5;
-    width: 100%;
-    background: transparent;
-    height: 8%;
-    padding: 0px;
-    position: fixed
 }
 
 footer {
@@ -139,57 +123,145 @@ footer {
     border-top-color: #4aaaa5;
     border-width: 8px;
     border-top-style: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/*About Me CSS*/
+figure {
+    overflow: auto;
+    width: 960px;
+    text-align: left;
+}
+
+div {
+    width: 960px;
+    padding: 20px;
+    margin: 30px auto;
+    overflow: auto;
+    background-color: #ffffff;
+}
+
+/*This is the contact form CSS*/
 
 .form {
     text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(5, 5, 48);
     display: inline;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 200px 1fr;
     background: transparent;
+    padding: 10px 30px;
 }
 
 label {
     float: left;    
-    width: 200px;
-    grid-column: 1 / 2;
+    width: 80%;
+    padding: 5px 0px;
 }
 
 input {
     float: left;
-    width: 200px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    Color: #777777;
+    padding: 5px 0px;
+    margin: 5px 0px;
+
 }
-input,
-button {
+
+button {   
     float: left;
-    grid-column: 2 / 3;
+    width: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4aaaa5;
+    Color: white;
+    height: 35px;
 }
+
 textarea {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    padding: 5px 0px;
 }
+
 
 /*This is styling for Portfolio Page*/
 
-img {
-    height: 200px;
-    width: 200px;
-    padding: 10px 10px;
-    float: left;
-    position: relative;
-}
-
-#canisters {
-    width: 200px;
-    position: absolute;
+h3 {
     background-color: #4aaaa5;
     color: white;
-    height: 40px;
-    padding: 10px 10px;
-    margin: 150px -10px 10px -10px;
-    z-index: 2;
+    height: 30px;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 140px;
+    width: 200px;
+}    
+
+.canisters {
+    height: 200px;
+    width: 200px;
+    padding: 10px 0px;
+    float: left;
+    position: relative;
+    background-image: url("../images/canisters.jpg");
+    background-size: cover;
+    margin: 20px 40px;
+    }
+
+.pillow {
+    height: 200px;
+    width: 200px;
+    padding: 10px 0px;
+    float: left;
+    position: relative;
+    background-image: url("../images/pillow.jpg");
+    background-size: cover;
+    margin: 20px 40px;
+    }
+
+.eggs {
+    height: 200px;
+    width: 200px;
+    padding: 10px 0px;
+    float: left;
+    position: relative;
+    background-image: url("../images/eggs.jpg");
+    background-size: cover;
+    margin: 20px 40px;
+}
+
+.flowers {
+    height: 200px;
+    width: 200px;
+    padding: 10px 00px;
+    float: left;
+    position: relative;
+    background-image: url("../images/eggs.jpg");
+    background-size: cover;
+    margin: 20px 40px;
+}
+
+.shoes {
+    height: 200px;
+    width: 200px;
+    padding: 10px 0px;
+    float: left;
+    position: relative;
+    background-image: url("../images/shoes.jpg");
+    background-size: cover;
+    margin: 20px 40px;
+}
+
+.bedroom {
+    height: 200px;
+    width: 200px;
+    padding: 10px 0px;
+    float: left;
+    position: relative;
+    background-image: url("../images/bedroom.jpg");
+    background-size: cover;
+    margin: 20px 40px;
 
 }
+
