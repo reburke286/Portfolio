@@ -54,6 +54,7 @@ h1 {
     border-bottom-style: solid;
     border-bottom-color: #cccccc;
     margin: 0px;
+    z-index: 300;
 }
 
 ul {
@@ -103,13 +104,6 @@ h2 {
     color: #dddddd;
 }
 
-#image {
-    float: left;
-    padding: 20px 20px;
-    height: 150px;
-    width: 150px;
-}
-
 footer {
     background-color: #666666;
     width: 100%;
@@ -127,6 +121,13 @@ footer {
 }
 
 /*About Me CSS*/
+#image {
+    float: left;
+    padding: 20px 20px;
+    height: 150px;
+    width: 150px;
+}
+
 figure {
     overflow: auto;
     width: 960px;
@@ -237,7 +238,7 @@ h3 {
     padding: 10px 00px;
     float: left;
     position: relative;
-    background-image: url("../images/eggs.jpg");
+    background-image: url("../images/flowers.jpg");
     background-size: cover;
     margin: 20px 40px;
 }
